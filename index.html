@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>newICThing</title>
+</head>
+</html>
+<img src="AlrightQuinn/Images/bk2.png" width="1920" height="1080" alt=""/>
+<div>
+
+    <div id="datacontainer" style="position: absolute; left: 1462px; top: -99px; width: 468px;" onmouseover="scrollspeed=0" onmouseout="scrollspeed=cache">
+    
+    <!-- scrollStart -->
+    <a class="twitter-timeline" data-lang="en" data-width="487" href="https://twitter.com/CBC_STEM?ref_src=twsrc%5Etfw">Tweets by CBC_STEM</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>    <!-- scrollEnd -->
+    
+    
+    <script type="text/javascript">
+    
+    var scrollspeed=cache=2
+    
+    
+    var initialdelay=500
+    
+    function initializeScroller(){
+    dataobj=document.all? document.all.datacontainer : document.getElementById("datacontainer")
+    dataobj.style.top="5px"
+    setTimeout("getdataheight()", initialdelay)
+    }
+    
+    function getdataheight(){
+    thelength=dataobj.offsetHeight
+    if (thelength==0)
+    setTimeout("getdataheight()",10)
+    else
+    scrollDiv()
+    }
+    
+    function scrollDiv(){
+    dataobj.style.top=parseInt(dataobj.style.top)-scrollspeed+"px"
+    if (parseInt(dataobj.style.top)<thelength*(-1))
+    dataobj.style.top="5px"
+    setTimeout("scrollDiv()",40)
+    }
+    
+    if (window.addEventListener)
+    window.addEventListener("load", initializeScroller, false)
+    else if (window.attachEvent)
+    window.attachEvent("onload", initializeScroller)
+    else
+    window.onload=initializeScroller
+    
+    </script>
+        
+</div>
+<html>
+
+<body>
+</body>
+</html>
