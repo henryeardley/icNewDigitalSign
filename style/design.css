@@ -1,0 +1,27 @@
+#cbcImage {
+    width:20px;
+    height:20px;
+}
+
+#datacontainer{
+    position: absolute; 
+    left: 1462px; 
+    bottom: -99px; 
+    width: 468px;
+    scroll-behavior:smooth;
+}
+footer ul li{
+    color:red;
+    list-style-type:none;
+    display:inline;
+    padding:10px;
+}
+body{
+    width:1920px;
+    height:1080px;
+    margin:auto;
+}
+#datacontainer{
+    height:1080px;
+    
+}
