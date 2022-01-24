@@ -5,7 +5,7 @@ var initialdelay=500
 
 function initializeScroller(){
 dataobj=document.all? document.all.datacontainer : document.getElementById("datacontainer")
-dataobj.style.top="10px"
+dataobj.style.top="50px"
 setTimeout("getdataheight()", initialdelay)
 }
 
